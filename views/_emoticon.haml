@@ -1,8 +1,2 @@
-%a.emoticon{ :href => "##{e.shortcut}", :"data-shortcut" => e.shortcut }
-
-  %img{ :alt => e.shortcut,
-    :title => e.shortcut,
-    :src => e.url,
-    :style => "width:#{e.width}px; height:#{e.height}px" }
-
-  .shortcut= h e.shortcut
+%li
+  %a.emoticon{ :href => "##{e.shortcut}", :"data-shortcut" => e.shortcut, :style => "background: no-repeat center left url(#{e.url})" }= h e.shortcut
